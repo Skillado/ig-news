@@ -3,13 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "stripe": "stripe-windows/stripe.exe listen  --forward-to localhost:3000/api/webhooks",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@stripe/stripe-js": "^1.17.1",
     "@types/next-auth": "^3.15.0",
+    "axios": "^0.21.1",
     "faunadb": "^4.3.0",
     "next": "11.0.1",
     "next-auth": "^3.28.0",
